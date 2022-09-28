@@ -1,0 +1,19 @@
+$color-primary: #1cad26;
+$color-secondary: #2b1e6a;
+$color-tertiary: #e5e90d;
+$color-light: #fff;
+$color-text: #a5a5a5;
+$color-dark: #384141;
+$Fuente1:'Lato', sans-serif;
+$Fuente2:'Oswald', sans-serif;
+
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%; /*1rem=10px*/
+    font-family: $Fuente1; /*toda es de este tipo de letra solo el otro para una seccion*/
+}

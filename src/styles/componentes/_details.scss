@@ -1,0 +1,53 @@
+@import './_globales';
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 400px;
+  border-radius: 50px;
+  color: $color-light;
+  font-size: 1.3rem;
+  padding: 15px;
+  position: absolute;
+  background-color: rgb(216, 240, 223);
+  transition: 1s ease;
+  animation: swipeLeft 1s ease forwards;
+  border: 2px solid $color-text;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    color: $color-secondary;
+    font-weight: 900;
+  }
+
+  &__title--close {
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  &--item {
+    padding-bottom: 15px;
+    color: $color-secondary;
+    font-weight: 900;
+    font-size: 1.3rem;
+  }
+
+  &--item-value {
+    font-size: 1.5rem;
+    color: $color-dark;
+  }
+}
+
+@keyframes swipeLeft {
+  100% {
+    transform: translateY(280px);
+  }
+}

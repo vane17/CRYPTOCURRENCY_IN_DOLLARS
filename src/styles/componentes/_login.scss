@@ -1,0 +1,97 @@
+@import './_globales';
+
+.login {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	place-items: center;
+	justify-content: center;
+
+	&__container {
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		min-width: 300px;
+		width: 50%;
+		max-width: 400px;
+		box-shadow: 0 0 9px 2px rgb(8 9 10 / 7%);
+		padding: 20px;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__label {
+		color: ($color-primary);
+		font-size: 2rem;
+		font-weight: bold;
+		margin-bottom: 4px;
+	}
+
+	&__input {
+		background-color: $color-light;
+		border: none;
+		border: 1px solid #d9dde0;
+		border-radius: 4px;
+		height: 50px;
+		font-size: 1.5rem;
+		padding: 10px;
+		margin-bottom: 12px;
+		box-shadow: 0 0 9px 2px rgb(8 9 10 / 7%);
+
+	}
+
+	::placeholder {
+		color: $color-text;
+	}
+
+	&__container a {
+		color: ($color-secondary);
+		font-size: 1.5rem;
+		text-align: center;
+		text-decoration: none;
+		margin-bottom: 52px;
+		margin-top: 20px;
+	}
+
+
+}
+
+.logo {
+	display: block;
+	width: 150px;
+	margin-bottom: 48px;
+	justify-self: center;
+
+}
+
+.login__input:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.input-email {
+	margin-bottom: 22px;
+}
+
+.button {
+	background-color: $color-primary;
+	border-radius: 8px;
+	border: none;
+	color: $color-light;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 20px;
+	cursor: pointer;
+	font-size: 1.8rem;
+	font-weight: bold;
+	height: 50px;
+}
+
+.button:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+

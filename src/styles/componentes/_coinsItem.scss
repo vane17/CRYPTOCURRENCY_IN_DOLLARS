@@ -1,0 +1,47 @@
+@import './_globales';
+
+.coinsItem {
+  box-shadow: 0 0 9px 5px rgb(8 9 10 / 7%);
+  height: 170px;
+  align-items: center;
+  display: flex;
+  padding: 0px 20px;
+
+  &__info--name {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: $color-secondary;
+  }
+
+  h3 {
+    color: $color-primary;
+  }
+
+  &__info--price {
+    font-size: 1.3rem;
+    color: $color-text;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    color: $color-secondary
+  }
+
+  &__button {
+    background-color: $color-primary;
+    height: 30px;
+    border: none;
+    color: $color-light;
+    width: 90px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+}
+

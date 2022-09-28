@@ -1,0 +1,15 @@
+@import './_globales';
+
+.CoinsList__conteiner {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 200px);
+	gap: 26px;
+	place-content: center;
+	margin: 50px;
+}
+
+@media (max-width: 640px) {
+	.CoinsList__conteiner {
+		grid-template-columns: repeat(auto-fill, 240px);
+	}
+}
